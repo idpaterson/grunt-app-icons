@@ -121,6 +121,7 @@ module.exports = function ( grunt ) {
       {name: 'icon-72@2x.png', resize: '144x144'},
       {name: 'icon-small.png', resize: '29x29'},
       {name: 'icon-small@2x.png', resize: '58x58'},
+      {name: 'icon-small@3x.png', resize: '87x87'},
       {name: 'icon-50.png', resize: '50x50'},
       {name: 'icon-50@2x.png', resize: '100x100'}
     ],
