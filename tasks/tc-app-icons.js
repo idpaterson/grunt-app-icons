@@ -110,27 +110,41 @@ module.exports = function ( grunt ) {
 
   } );
 
-  var icons = {
-    ios: [
+  var iosLargeIcons = [
       {name: 'Icon-60@2x.png', resize: '120x120'},
       {name: 'Icon-60@3x.png', resize: '180x180'},
       {name: 'Icon-76.png', resize: '76x76'},
-      {name: 'Icon-76@2x.png', resize: '152x152'},
+      {name: 'Icon-76@2x.png', resize: '152x152'}
+  ];
+
+  var iosSmallIcons = [
       {name: 'Icon-Small-40.png', resize: '40x40'},
       {name: 'Icon-Small-40@2x.png', resize: '80x80'},
       {name: 'Icon-Small-40@3x.png', resize: '120x120'},
       {name: 'Icon-Small.png', resize: '29x29'},
       {name: 'Icon-Small@2x.png', resize: '58x58'},
-      {name: 'Icon-Small@3x.png', resize: '87x87'},
-    ],
-    ios6: [
+      {name: 'Icon-Small@3x.png', resize: '87x87'}
+  ];
+
+  var ios6LargeIcons = [
       {name: 'Icon.png', resize: '57x57'},
       {name: 'Icon@2x.png', resize: '114x114'},
       {name: 'Icon-72.png', resize: '72x72'},
-      {name: 'Icon-72@2x.png', resize: '144x144'},
+      {name: 'Icon-72@2x.png', resize: '144x144'}
+  ];
+
+  var ios6SmallIcons = [
       {name: 'Icon-Small-50.png', resize: '50x50'},
       {name: 'Icon-Small-50@2x.png', resize: '100x100'}
-    ],
+  ];
+
+  var icons = {
+    ios: iosLargeIcons.concat(iosSmallIcons),
+    iosLarge: iosLargeIcons,
+    iosSmall: iosSmallIcons,
+    ios6: ios6LargeIcons.concat(ios6SmallIcons),
+    ios6Large: ios6LargeIcons,
+    ios6Small: ios6SmallIcons,
     android: [
       {name: 'icon-ldpi.png', resize: '36x36'},
       {name: 'icon-mdpi.png', resize: '48x48'},
