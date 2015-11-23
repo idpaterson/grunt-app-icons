@@ -147,6 +147,14 @@ module.exports = function ( grunt ) {
       {name: 'drawable-xxhdpi/icon.png', resize: '144x144'},
       {name: 'drawable-xxxhdpi/icon.png', resize: '192x192'}
     ],
+    androidNotifications: [
+      {name: 'notification-icon-ldpi.png', resize: '18x18'},
+      {name: 'notification-icon-mdpi.png', resize: '24x24'},
+      {name: 'notification-icon-hdpi.png', resize: '36x36'},
+      {name: 'notification-icon-xhdpi.png', resize: '48x48'},
+      {name: 'notification-icon-xxhdpi.png', resize: '72x72'},
+      {name: 'notification-icon-xxxhdpi.png', resize: '96x96'}
+    ],
     iosStore: [
       {name: 'iTunesArtwork.png', resize: '512x512'},
       {name: 'iTunesArtwork@2x.png', resize: '1024x1024'}
