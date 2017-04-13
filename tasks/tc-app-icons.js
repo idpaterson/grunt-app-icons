@@ -114,7 +114,8 @@ module.exports = function ( grunt ) {
       {name: 'Icon-60@2x.png', resize: '120x120'},
       {name: 'Icon-60@3x.png', resize: '180x180'},
       {name: 'Icon-76.png', resize: '76x76'},
-      {name: 'Icon-76@2x.png', resize: '152x152'}
+      {name: 'Icon-76@2x.png', resize: '152x152'},
+      {name: 'Icon-83.5@2x.png', resize: '167x167'}
   ];
 
   var iosSmallIcons = [
